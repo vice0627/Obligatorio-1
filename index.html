@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imagenes/loguito1.png">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    
+    <title>No te preocupes </title>
+</head>
+    <body>
+
+        <script type="text/javascript" src="dominio/obligatorio1.js"></script>
+        <link rel="StyleSheet" type="text/css" href="css/estilos.css">
+
+       
+<div class="main" id="main" style="position: absolute;">
+
+<div class="video" id="backgroundVideo" style="position: absolute;z-index:0">
+
+        <video autoplay loop muted>
+        <source src="fondo.mp4" type="video/mp4"></video>
+
+</div>
+
+<div class="left" id="mainLeft" style="z-index:1;">
+    <div class="leftUp">
+        <div class="recuadro" id="poliza1" style="z-index: 1;">
+
+            <mark><p>
+                Poliza 1 : VEHÍCULOS
+            </p></mark>
+             <p>Conocé nuestra cobertura de seguros de vehículos
+                 (Autos,Camiones,Motos,etc.).</p>
+                  <p></p>
+        </div>
+    </div>
+    <div class="leftDown">
+
+        <div class="recuadro" id="poliza2" style="z-index: 2;">
+            <mark><p>
+                Poliza 2 : INCENDIO HOGAR
+            </p></mark>
+             <p> Te ofrecemos la mejor cobertura ante los daños ocasionados por el fuego y las acciones al intentar extinguirlo.  
+             </p>
+          </div>
+    </div>
+</div>
+
+     <div class="middle" id="mainMiddle" style="z-index:3;">
+
+        <div  class="middleCenter" style="position: absolute;top:20vh">
+        <center>
+            <fieldset>
+                <form>
+                    <table border="2" >
+    
+                        <tr><td colspan = "2" align = "center"><img src = "imagenes/Logo1.png"></td></tr>
+
+                        <tr><td>Id</td><td><input type="text" id="id"></td></tr>
+                        <tr><td>Nombre</td><td><input type="text" id="nombre"></td></tr>
+                        <tr><td>Direccion</td><td><input type="text" id="direccion"></td></tr>
+                        <tr><td>Tipo de poliza</td><td><input type="text" id="tipoPoliza"></td></tr>
+                        <tr><td>Monto</td><td><input type="text" id="monto"></td></tr>
+                        <tr><td>Fecha de vencimiento</td><td><input type="text" id="vencimiento"></td></tr>
+                        
+                    <tr><td colspan="2" align="center">
+                        <input style="border-radius: 5px" type="button" value="alta" onclick="alta()">
+                        <input style="border-radius: 5px" type="button" value="baja" onclick="baja()">
+                        <input style="border-radius: 5px" type="button" value="modificar" onclick="modificar()">
+                        <input style="border-radius: 5px" type="button" value="paga más" onclick="pagaMas()">
+                        <input style="border-radius: 5px" type="reset" value="RESET">
+                    </td></tr>
+    
+                        <tr><td colspan="2" align="center">
+                        <select size="8" id="lista" onclick=""></select>
+                        </td></tr>
+                        <tr><td colspan="2"></td></tr>
+    
+                    </table>
+                </form>
+            </fieldset>
+        </center>
+        <div class="recuadroInformacion" style="z-index: 2" align="center">
+        <mark><p style="color: white" align="left">Extra info:</p></mark>
+        <p></p>
+        <p align="left">-Creadores del sitio: Vicenzo Carro y Franco Sellanes</p>
+        <p align="left">-Documentación: <a style="color: rgb(230, 230, 230)" href="https://docs.google.com/document/d/1alfa1hR8QbEGS3pMZf4ucUdmFQtcbhP8AAxWcXNHTzM/edit?usp=sharing" target="_blank">Documentación-Proyecto Seguros</a></p>
+        <p align="left">-Seguros No te preocupes©</p>
+        
+        </div>
+        </div>
+    </div>
+
+    <div class="right" id="mainRight" style="z-index: 2;">
+
+        <div class="rightUp" >
+
+        <div class="recuadro" id="poliza3" style="z-index: 2;">
+
+            <mark><p>
+                Poliza 3 : VIDA
+            </p></mark>
+             <p>Conocé los planes de seguros de vida,ahorro y las diferentes coberturas complementarias, con el máximo respaldo que solo "Seguros No Te Preocupes" te puede dar.</p>
+                  <p></p>
+                  
+    </div>
+</div>
+        <div class="recuadroBusqueda"id="rigthDown" style="z-index:2">
+
+            <mark><p style="color: white" align="center" id="titulo">Buscador</p></mark>
+            <center>
+                <fieldset>
+                    <form>
+                        <table class="tabla">
+                            
+                            <tr><td>1-</td><td><input type="text" id="idBuscador"></td><td><input style="border-radius: 5px" type="button" value="Buscar" onclick="buscar()"></td></tr>
+                            <tr><td>2-</td><td><input type="text" id="idCliente"></td><td><input style="border-radius: 5px" type="button" value="Poliza" onclick="polizaCliente()"></td></tr>
+                            <tr><td>3-</td><td><input type="text" id="idPoliza"></td><td><input style="border-radius: 5px" type="button" value="Id Poliza" onclick="idPoliza()"></td></tr>
+                            <tr><td>4-</td><td><input type="text" id="idnombre"></td><td><input style="border-radius: 5px" type="button" value="Existe Cliente" onclick="existe()"></td></tr>
+                    
+                        </table>
+                    </form>
+                </fieldset>
+            </center>
+
+        </div>
+    </div>
+
+</div>   
+    </body>
+</html>

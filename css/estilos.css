@@ -1,0 +1,122 @@
+
+body{
+  background-color: black;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 15vw;
+   
+
+}
+.backgroudnVideo{
+  height: 100vh;
+  width: 100vw;
+}
+.mainLeft{
+  background-color: blue;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  
+}
+.leftUp{
+  height: 40%;
+  width: 40%;
+  margin-top: 9vw;
+  margin-left: 4vw;
+  display: grid;
+}
+.leftDown{
+  height: 40%;
+  width: 40%;
+  display: grid;
+  margin-left: 4vw;
+}
+.mainMiddle{
+  background-color: rgb(168, 118, 23);
+}
+.mainRight{
+  background-color: aqua;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+}
+.rightUp{
+  height: 40%;
+  width: 40%;
+  display: grid;
+  margin-top: 9vw;
+  margin-left: 4vw;
+  
+}
+.rightDown{
+  height: 40%;
+  width: 40%;
+  display: grid;
+  margin-right: 2vw;
+  margin-left: 4vw;
+}
+.middleCenter{
+ background-color: rgba(0, 0, 0, 0.479);
+ border-radius: 0.45vw;
+
+}
+#lista{
+  width: 21vw;
+}
+.recuadro{
+  margin: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.439);
+  width:  15vw;
+  height: 30vh;
+  border-radius: 0.45vw;
+  font-family:sans-serif;
+}
+.recuadroBusqueda{
+  margin: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vw;
+  align-items: center;
+  background-color: rgba(47, 39, 39, 0.569);
+  width:  28vw;
+  height: 30vh;
+  border-radius: 0.45vw;
+  font-family:sans-serif;
+}
+.recuadroInformacion{
+  padding-top: 1vh;
+  margin: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.287);
+  width:  25vw;
+  height: 15vh;
+  border-radius: 0.45vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.titulo{
+  margin-bottom: 2vw;
+}
+.tabla{
+  margin-top: 2.2vw;
+  margin-bottom: 2vw;
+}
+body::-webkit-scrollbar{
+  width:0.35vw;
+}
+body::-webkit-scrollbar-thumb{
+  background:rgba(62, 61, 67, 0.646);
+  border-radius: 0.25vw ;
+}
