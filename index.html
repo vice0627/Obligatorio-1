@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="imagenes/loguito1.png">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    
+
     <title>No te preocupes </title>
 </head>
     <body>
-
         <script type="text/javascript" src="dominio/obligatorio1.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="dominio/sweetAlert.js"></script>
         <link rel="StyleSheet" type="text/css" href="css/estilos.css">
-
+        <script>
+            bienvenida();
+        </script>
        
 <div class="main" id="main" style="position: absolute;">
 
@@ -69,8 +72,10 @@
                         <input style="border-radius: 5px" type="button" value="alta" onclick="alta()">
                         <input style="border-radius: 5px" type="button" value="baja" onclick="baja()">
                         <input style="border-radius: 5px" type="button" value="modificar" onclick="modificar()">
-                        <input style="border-radius: 5px" type="button" value="paga más" onclick="pagaMas()">
                         <input style="border-radius: 5px" type="reset" value="RESET">
+                        <input style="border-radius: 5px" type="button" value="paga más" onclick="pagaMas()">
+                        <input style="border-radius: 5px" type="button" value="listar" onclick="listar()">
+                        <input style="border-radius: 5px" type="button" value="cambio vencimiento" onclick="cambioVencimiento()">
                     </td></tr>
     
                         <tr><td colspan="2" align="center">
@@ -84,10 +89,12 @@
         </center>
         <div class="recuadroInformacion" style="z-index: 2" align="center">
         <mark><p style="color: white" align="left">Extra info:</p></mark>
-        <p></p>
+      
         <p align="left">-Creadores del sitio: Vicenzo Carro y Franco Sellanes</p>
         <p align="left">-Documentación: <a style="color: rgb(230, 230, 230)" href="https://docs.google.com/document/d/1alfa1hR8QbEGS3pMZf4ucUdmFQtcbhP8AAxWcXNHTzM/edit?usp=sharing" target="_blank">Documentación-Proyecto Seguros</a></p>
+        <p align="left">-Manual de usuario: <a style="color: rgb(230, 230, 230)" href="https://docs.google.com/document/d/15EdK8aCuZ57cgrju2Wm3Bqo_2Q3EOnktO3sAJYNy4uc/edit" target="_blank">Manual-Proyecto Seguros</a></p>
         <p align="left">-Seguros No te preocupes©</p>
+        
         
         </div>
         </div>
@@ -129,5 +136,6 @@
     </div>
 
 </div>   
+
     </body>
 </html>
