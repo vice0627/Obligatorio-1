@@ -1,5 +1,6 @@
 
 body{
+  
   background-color: black;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +27,22 @@ body{
   grid-template-rows: 1fr 1fr;
   display: grid;
   
+}
+.imagenAuto{
+
+  height: 16vh;
+  width: 15vw;
+  border-radius: 0.45vw;
+}
+.imagenIncendio{
+  height: 14vh;
+  width: 15vw;
+  border-radius: 0.45vw;
+}
+.imagenVida{
+  height: 14vh;
+  width: 15vw;
+  border-radius: 0.45vw;
 }
 .leftUp{
   height: 40%;
@@ -78,7 +95,7 @@ body{
   align-items: center;
   background-color: rgba(255, 255, 255, 0.439);
   width:  15vw;
-  height: 30vh;
+  height: 32vh;
   border-radius: 0.45vw;
   font-family:sans-serif;
 }
@@ -90,7 +107,7 @@ body{
   align-items: center;
   background-color: rgba(47, 39, 39, 0.569);
   width:  28vw;
-  height: 30vh;
+  height: 32vh;
   border-radius: 0.45vw;
   font-family:sans-serif;
 }
