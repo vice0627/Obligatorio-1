@@ -171,7 +171,7 @@ function faltanDatosTabla(){
     }
     if(tipoPoliza === ""){
         alert("Falta el tipo de poliza.");
-        x = -1;
+        x = -1; 
     }
     if(monto === ""){
         alert("Falta el monto.");
@@ -228,51 +228,91 @@ function buscar(){
     
   
 }
-function idPoliza(){
+function idDePoliza(){
 
     let idPoliza = document.getElementById("idPoliza").value;
+    let contador = 0;
+    let p1 = [];
+    let p2 = [];
+    let p3 = [];
+    
+    if(typeof idPoliza == "string"){
 
-    let compradores = [];
-    let poliza1 = 0;
-    let poliza2 = 0;
-    let poliza3 = 0;
+        idPoliza = idPoliza.toLowerCase();
 
-    if(idPoliza == 1 || idPoliza == "vehículos" || idPoliza == "VEHÍCULOS"){
+        if(idPoliza == "vehículos"){
 
-       for(let i = 0;i <= clientes.length;i++){
+            for(let i = 0;i <= clientes.length;i++){
+                if(clientes[i].TipoPoliza == 1){
 
-          if(clientes[i].TipoPoliza == 1){
-              compradores[i] == clientes[i].Nombre;
-              poliza1++;
-          }
-       }
-       swal(poliza1 + " cliente/s compraron la poliza 1 : " + compradores);
+                   p1[i] = clientes[i].Nombre;
+                   contador++;
+                }
+            }
+            swal(contador + " clientes tienen la poliza 1.");
+        }
+        else if(idPoliza == "incendio hogar"){
+
+            for(let i = 0;i <= clientes.length;i++){
+                if(clientes[i].TipoPoliza == 2){
+
+                   p2[i] = clientes[i].Nombre;
+                   contador++;
+                }
+            }
+            swal(contador + " clientes tienen la poliza 2.");
+        }
+        else{
+            for(let i = 0;i <= clientes.length;i++){
+                if(clientes[i].TipoPoliza == 3){
+
+                   p3[i] = clientes[i].Nombre;
+                   contador++;
+                }
+            }
+            swal(contador + " clientes tienen la poliza 3.");
+        }
     }
-    if(idPoliza == 2 || idPoliza == "incendio hogar" || idPoliza == "INCENDIO HOGAR"){
+    else if(typeof idPoliza == "number"){
 
-        for(let i = 0;i <= clientes.length;i++){
- 
-           if(clientes[i].TipoPoliza == 2){
-               compradores[i] == clientes[i].Nombre;
-               poliza2++;
-           }
-        }
-        swal(poliza2 + " cliente/s compraron la poliza 2 : " + compradores);
-     }
-    if(idPoliza == 3 || idPoliza == "vida" || idPoliza == "VIDA"){
+        if(idPoliza == 1){
 
-        for(let i = 0;i <= clientes.length;i++){
- 
-           if(clientes[i].TipoPoliza == 3){
-               compradores[i] == clientes[i].Nombre;
-               poliza3++;
-           }
+            for(let i = 0;i <= clientes.length;i++){
+                if(clientes[i].TipoPoliza == 1){
+
+                   p1[i] = clientes[i].Nombre;
+                   contador++;
+                }
+            }
+            swal(contador + " clientes tienen la poliza 1.");
         }
-        swal(poliza3 + " cliente/s compraron la poliza 3 : " + compradores);
-     }
-    
-    
-    
+        else if(idPoliza == 2){
+
+            for(let i = 0;i <= clientes.length;i++){
+                if(clientes[i].TipoPoliza == 2){
+
+                   p2[i] = clientes[i].Nombre;
+                   contador++;
+                }
+            }
+            swal(contador + " clientes tienen la poliza 2.");
+        }
+        else{
+            for(let i = 0;i <= clientes.length;i++){
+                if(clientes[i].TipoPoliza == 3){
+
+                   p3[i] = clientes[i].Nombre;
+                   contador++;
+                }
+            }
+        }
+        swal(contador + " clientes tienen la poliza 3.");
+    }
+    else if(typeof idPoliza == "undefined"){
+   
+        swal("No ha ingresado ninguna poliza.");
+    }
+
 }
 function existe(){
 
